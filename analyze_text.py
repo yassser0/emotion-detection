@@ -5,7 +5,7 @@ from nltk.tokenize import sent_tokenize
 from collections import Counter
 
 # Load tokenizer & model
-model_path = "emotion_model_go/checkpoint-8142"
+model_path = "emotion_model_go/checkpoint****" # Replace **** with the appropriate checkpoint number
 tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
 model = AutoModelForSequenceClassification.from_pretrained(model_path)
 

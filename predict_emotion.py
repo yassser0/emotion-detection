@@ -4,7 +4,7 @@ import os
 
 print("Running script from:", os.path.abspath(__file__))
 
-model_path = "emotion_model_go/checkpoint-8142"
+model_path = "emotion_model_go/checkpoint****"  # Replace **** with the appropriate checkpoint number   
 print("Loading model from:", model_path)
 
 tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
@@ -30,7 +30,7 @@ def predict_emotion(text):
 print("\n🔮 Emotion predictor is ready!\n")
 
 while True:
-    txt = input("Enter a sentence (or 'quit'): ")
+    txt = input("Enter a sentence: ")
     if txt.lower() == "quit":
         break
     print(" → Predicted emotion:", predict_emotion(txt), "\n")

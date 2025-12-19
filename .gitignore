@@ -1,4 +1,4 @@
-# Ignore Python virtual environments
+# Ignore Python venv
 venv/
 .env/
 
@@ -6,16 +6,16 @@ venv/
 __pycache__/
 *.pyc
 
-# Ignore training artifacts (not needed for inference)
-emotion_model_go/checkpoint-8142/optimizer.pt
-emotion_model_go/checkpoint-8142/scheduler.pt
-emotion_model_go/checkpoint-8142/trainer_state.json
-emotion_model_go/checkpoint-8142/rng_state.pth
+# Ignore ALL model checkpoints 
+emotion_model_go/
 
-# Ignore large temporary files
+# Ignore data files
+*.csv
+
+# Ignore logs / temp
 *.tmp
 *.log
 
-# Ignore VSCode settings
+# Ignore IDE settings
 .vscode/
 .idea/
